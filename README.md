@@ -1,4 +1,4 @@
-# docker-davmail [https://github.com/johnhamelink/docker-davmail/actions?query=workflow%3ADocker](![Docker](https://github.com/johnhamelink/docker-davmail/workflows/Docker/badge.svg?branch=master))
+# docker-davmail [![Docker](https://github.com/johnhamelink/docker-davmail/workflows/Docker/badge.svg?branch=master)](https://github.com/johnhamelink/docker-davmail/actions?query=workflow%3ADocker)
 
 A EWS proxy in docker. Run it like this:
 
