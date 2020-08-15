@@ -13,7 +13,7 @@ RUN set -ex \
     && apk --update --no-progress upgrade \
     && cd /opt \
     && mkdir -p davmail \
-    && unzip davmail-5.4.0-3135.zip -d davmail \
+    && unzip davmail*.zip -d davmail \
     && rm -rf /var/cache/apk/* /tmp/* /opt/davmail-* \
     && adduser -S -u 500 -h /var/lib/davmail davmail \
     && chmod 0644 /etc/davmail/*
