@@ -2,7 +2,9 @@ FROM adoptopenjdk/openjdk11:alpine-jre
 LABEL maintainer="James Z.M. Gao <gaozm55@gmail.com>"
 
 # Download
-ADD https://downloads.sourceforge.net/project/davmail/davmail/5.4.0/davmail-5.4.0-3135.zip /opt/
+# I've changed this to use a package generated from Davmail's CI
+# as it's more reliable
+ADD https://ci.appveyor.com/api/projects/mguessan/davmail/artifacts/dist%2Fdavmail-5.5.1-trunk.zip?job=Environment%3A%20JAVA_HOME%3DC%3A%5CProgram%20Files%5CJava%5Cjdk1.8.0 /opt/
 COPY content /
 
 # untar file, add a non-root system user
