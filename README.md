@@ -20,6 +20,12 @@ Accepted docker environment variables:
 * DAVMAIL_NTLM_DOMAIN: optional, windows domain
 * DAVMAIL_CONFIG_URL: a url for downloading a specific configuration, this can override all other options
 * DAVMAIL_SSL_PASS: optional, set to the password of a PKCS12 SSL file
+* DAVMAIL_BIND_ADDRESS: optional, set the URL that davmail should bind to
+* DAVMAIL_NO_SECURE_CALDAV: optional, default: false, disable SSL for CalDAV
+* DAVMAIL_NO_SECURE_IMAP: optional, default: false, disable SSL for IMAP
+* DAVMAIL_NO_SECURE_LDAP: optional, default: false, disable SSL for LDAP
+* DAVMAIL_NO_SECURE_POP: optional, default: false, disable SSL for POP
+* DAVMAIL_NO_SECURE_SMTP: optional, default: false, disable SSL for SMTP
 
 Listened ports:
 
