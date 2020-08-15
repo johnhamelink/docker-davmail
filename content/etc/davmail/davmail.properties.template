@@ -35,7 +35,7 @@ davmail.noProxyFor=
 # allow remote connection to DavMail
 davmail.allowRemote=true
 # bind server sockets to a specific address
-davmail.bindAddress=
+davmail.bindAddress=${DAVMAIL_BIND_ADDRESS}
 # client connections SO timeout in seconds
 davmail.clientSoTimeout=
 
@@ -49,11 +49,11 @@ davmail.ssl.keyPass=${DAVMAIL_SSL_PASS}
 davmail.server.certificate.hash=${DAVMAIL_SERVER_CERTIFICATE_HASH}
 
 # disable SSL for specified listeners
-davmail.ssl.nosecurecaldav=false
-davmail.ssl.nosecureimap=false
-davmail.ssl.nosecureldap=false
-davmail.ssl.nosecurepop=false
-davmail.ssl.nosecuresmtp=false
+davmail.ssl.nosecurecaldav=${DAVMAIL_NO_SECURE_CALDAV:+false}
+davmail.ssl.nosecureimap=${DAVMAIL_NO_SECURE_IMAP:+false}
+davmail.ssl.nosecureldap=${DAVMAIL_NO_SECURE_LDAP:+false}
+davmail.ssl.nosecurepop=${DAVMAIL_NO_SECURE_POP:+false}
+davmail.ssl.nosecuresmtp=${DAVMAIL_NO_SECURE_SMTP:+false}
 
 # disable update check
 davmail.disableUpdateCheck=true
@@ -131,7 +131,7 @@ davmail.ssl.clientKeystoreFile=
 davmail.ssl.clientKeystorePass=
 
 # disable all balloon notifications
-davmail.disableGuiNotifications=false
+davmail.disableGuiNotifications=true
 # disable startup balloon notifications
 davmail.showStartupBanner=true
 
